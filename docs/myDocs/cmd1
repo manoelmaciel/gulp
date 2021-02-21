@@ -1,0 +1,302 @@
+20/02/2021 - 20:29 
+
+manoel@worktool ~/Público/gulp/gulp $ git status
+No ramo iprove_method_watch
+Arquivos não monitorados:
+  (utilize "git add <arquivo>..." para incluir o que será submetido)
+
+	docs/docs/
+
+nada adicionado ao envio mas arquivos não registrados estão presentes (use "git add" to registrar)
+manoel@worktool ~/Público/gulp/gulp $ git add --all
+manoel@worktool ~/Público/gulp/gulp $ git status
+No ramo iprove_method_watch
+Mudanças a serem submetidas:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   docs/docs/NOTES
+	new file:   docs/docs/NOTES~
+	new file:   docs/docs/cmd0
+	new file:   docs/docs/cmd0~
+	new file:   docs/docs/notes
+	new file:   docs/docs/notes~
+
+manoel@worktool ~/Público/gulp/gulp $ git reset HEAD
+Unstaged changes after reset:
+M	.gitignore
+manoel@worktool ~/Público/gulp/gulp $ git status
+No ramo iprove_method_watch
+Changes not staged for commit:
+  (utilize "git add <arquivo>..." para atualizar o que será submetido)
+  (utilize "git checkout -- <arquivo>..." para descartar mudanças no diretório de trabalho)
+
+	modified:   .gitignore
+
+Arquivos não monitorados:
+  (utilize "git add <arquivo>..." para incluir o que será submetido)
+
+	.gitignore~
+	docs/docs/
+
+nenhuma modificação adicionada à submissão (utilize "git add" e/ou "git commit -a")
+manoel@worktool ~/Público/gulp/gulp $ git add .
+manoel@worktool ~/Público/gulp/gulp $ git status
+No ramo iprove_method_watch
+Mudanças a serem submetidas:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   .gitignore
+	new file:   .gitignore~
+	new file:   docs/docs/NOTES
+	new file:   docs/docs/NOTES~
+	new file:   docs/docs/cmd0
+	new file:   docs/docs/cmd0~
+	new file:   docs/docs/notes
+	new file:   docs/docs/notes~
+
+manoel@worktool ~/Público/gulp/gulp $ git reset HEAD
+Unstaged changes after reset:
+M	.gitignore
+manoel@worktool ~/Público/gulp/gulp $ git status
+No ramo iprove_method_watch
+Changes not staged for commit:
+  (utilize "git add <arquivo>..." para atualizar o que será submetido)
+  (utilize "git checkout -- <arquivo>..." para descartar mudanças no diretório de trabalho)
+
+	modified:   .gitignore
+
+Arquivos não monitorados:
+  (utilize "git add <arquivo>..." para incluir o que será submetido)
+
+	docs/docs/
+
+nenhuma modificação adicionada à submissão (utilize "git add" e/ou "git commit -a")
+manoel@worktool ~/Público/gulp/gulp $ git add .
+manoel@worktool ~/Público/gulp/gulp $ git status
+No ramo iprove_method_watch
+Mudanças a serem submetidas:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   .gitignore
+	new file:   docs/docs/NOTES
+	new file:   docs/docs/NOTES~
+	new file:   docs/docs/cmd0
+	new file:   docs/docs/cmd0~
+	new file:   docs/docs/notes
+	new file:   docs/docs/notes~
+
+manoel@worktool ~/Público/gulp/gulp $ git reset HEAD
+Unstaged changes after reset:
+M	.gitignore
+manoel@worktool ~/Público/gulp/gulp $ git status
+No ramo iprove_method_watch
+Changes not staged for commit:
+  (utilize "git add <arquivo>..." para atualizar o que será submetido)
+  (utilize "git checkout -- <arquivo>..." para descartar mudanças no diretório de trabalho)
+
+	modified:   .gitignore
+
+Arquivos não monitorados:
+  (utilize "git add <arquivo>..." para incluir o que será submetido)
+
+	docs/docs/
+
+nenhuma modificação adicionada à submissão (utilize "git add" e/ou "git commit -a")
+manoel@worktool ~/Público/gulp/gulp $ git add .
+manoel@worktool ~/Público/gulp/gulp $ git status
+No ramo iprove_method_watch
+Mudanças a serem submetidas:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   .gitignore
+	new file:   .gitignore~
+	new file:   docs/docs/NOTES
+	new file:   docs/docs/NOTES~
+	new file:   docs/docs/cmd0
+	new file:   docs/docs/cmd0~
+	new file:   docs/docs/notes
+	new file:   docs/docs/notes~
+
+manoel@worktool ~/Público/gulp/gulp $ git reset HEAD
+Unstaged changes after reset:
+M	.gitignore
+manoel@worktool ~/Público/gulp/gulp $ git status
+No ramo iprove_method_watch
+Changes not staged for commit:
+  (utilize "git add <arquivo>..." para atualizar o que será submetido)
+  (utilize "git checkout -- <arquivo>..." para descartar mudanças no diretório de trabalho)
+
+	modified:   .gitignore
+
+Arquivos não monitorados:
+  (utilize "git add <arquivo>..." para incluir o que será submetido)
+
+	docs/docs/
+
+nenhuma modificação adicionada à submissão (utilize "git add" e/ou "git commit -a")
+manoel@worktool ~/Público/gulp/gulp $ git add .
+manoel@worktool ~/Público/gulp/gulp $ git status
+No ramo iprove_method_watch
+Mudanças a serem submetidas:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   .gitignore
+	new file:   docs/docs/NOTES
+	new file:   docs/docs/cmd0
+	new file:   docs/docs/notes
+
+manoel@worktool ~/Público/gulp/gulp $ commit -m "Includes my documents"
+commit: comando não encontrado
+manoel@worktool ~/Público/gulp/gulp $ git commit -m "Includes my documents"
+[iprove_method_watch 2084ae9] Includes my documents
+ 4 files changed, 117 insertions(+)
+ create mode 100644 docs/docs/NOTES
+ create mode 100644 docs/docs/cmd0
+ create mode 100644 docs/docs/notes
+manoel@worktool ~/Público/gulp/gulp $ git log
+commit 2084ae9d56f5632c3659cf0680d398da085be61c
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Sat Feb 20 18:32:05 2021 -0300
+
+    Includes my documents
+
+commit f91c388beb265e5008202f11100309549162247a
+Author: roydukkey <roydukkey@users.noreply.github.com>
+Date:   Mon Feb 8 15:22:24 2021 -0500
+
+    Docs: Remove typo in custom registry docs (#2543)
+
+commit df252509b52acd712300b3b5d00bf7aedf0dbd40
+Author: Anderson Samir Corrêa Paz de Camargo <andergtk@users.noreply.github.com>
+Date:   Sun Jan 10 20:13:16 2021 -0300
+
+    Docs: Fix typo in task docs (#2524)
+
+commit b6d6d7c8c37f4be846cf796d3929fe25c5329808
+Author: azu <azu@users.noreply.github.com>
+Date:   Mon Jan 11 07:49:51 2021 +0900
+
+    Docs: fix recipe link (#2526)
+manoel@worktool ~/Público/gulp/gulp $ git status
+No ramo iprove_method_watch
+nada a submeter, diretório de trabalho vazio
+manoel@worktool ~/Público/gulp/gulp $ git push origin iprove_method_watch
+Username for 'https://github.com': manoelmaciel
+Password for 'https://manoelmaciel@github.com': 
+Counting objects: 8, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 1.73 KiB | 0 bytes/s, done.
+Total 8 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 3 local objects.
+remote: 
+remote: Create a pull request for 'iprove_method_watch' on GitHub by visiting:
+remote:      https://github.com/manoelmaciel/gulp/pull/new/iprove_method_watch
+remote: 
+To https://github.com/manoelmaciel/gulp.git
+ * [new branch]      iprove_method_watch -> iprove_method_watch
+manoel@worktool ~/Público/gulp/gulp $ git status
+No ramo iprove_method_watch
+nada a submeter, diretório de trabalho vazio
+manoel@worktool ~/Público/gulp/gulp $ git log
+commit 2084ae9d56f5632c3659cf0680d398da085be61c
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Sat Feb 20 18:32:05 2021 -0300
+
+    Includes my documents
+
+commit f91c388beb265e5008202f11100309549162247a
+Author: roydukkey <roydukkey@users.noreply.github.com>
+Date:   Mon Feb 8 15:22:24 2021 -0500
+
+    Docs: Remove typo in custom registry docs (#2543)
+
+commit df252509b52acd712300b3b5d00bf7aedf0dbd40
+Author: Anderson Samir Corrêa Paz de Camargo <andergtk@users.noreply.github.com>
+Date:   Sun Jan 10 20:13:16 2021 -0300
+
+    Docs: Fix typo in task docs (#2524)
+
+commit b6d6d7c8c37f4be846cf796d3929fe25c5329808
+Author: azu <azu@users.noreply.github.com>
+Date:   Mon Jan 11 07:49:51 2021 +0900
+
+    Docs: fix recipe link (#2526)
+manoel@worktool ~/Público/gulp/gulp $ git log remote
+fatal: ambiguous argument 'remote': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+manoel@worktool ~/Público/gulp/gulp $ git status
+No ramo iprove_method_watch
+nada a submeter, diretório de trabalho vazio
+manoel@worktool ~/Público/gulp/gulp $ git log
+commit 2084ae9d56f5632c3659cf0680d398da085be61c
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Sat Feb 20 18:32:05 2021 -0300
+
+    Includes my documents
+
+commit f91c388beb265e5008202f11100309549162247a
+Author: roydukkey <roydukkey@users.noreply.github.com>
+Date:   Mon Feb 8 15:22:24 2021 -0500
+
+    Docs: Remove typo in custom registry docs (#2543)
+
+commit df252509b52acd712300b3b5d00bf7aedf0dbd40
+Author: Anderson Samir Corrêa Paz de Camargo <andergtk@users.noreply.github.com>
+Date:   Sun Jan 10 20:13:16 2021 -0300
+
+    Docs: Fix typo in task docs (#2524)
+
+commit b6d6d7c8c37f4be846cf796d3929fe25c5329808
+Author: azu <azu@users.noreply.github.com>
+Date:   Mon Jan 11 07:49:51 2021 +0900
+
+    Docs: fix recipe link (#2526)
+manoel@worktool ~/Público/gulp/gulp $ git status
+No ramo iprove_method_watch
+nada a submeter, diretório de trabalho vazio
+manoel@worktool ~/Público/gulp/gulp $ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: The current branch iprove_method_watch has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin iprove_method_watch
+
+manoel@worktool ~/Público/gulp/gulp $ git push origin iprove_method_watch
+Username for 'https://github.com': manoelmaciel
+Password for 'https://manoelmaciel@github.com': 
+Counting objects: 8, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 1.73 KiB | 0 bytes/s, done.
+Total 8 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 3 local objects.
+remote: 
+remote: Create a pull request for 'iprove_method_watch' on GitHub by visiting:
+remote:      https://github.com/manoelmaciel/gulp/pull/new/iprove_method_watch
+remote: 
+To https://github.com/manoelmaciel/gulp.git
+ * [new branch]      iprove_method_watch -> iprove_method_watch
+manoel@worktool ~/Público/gulp/gulp $ 
+
