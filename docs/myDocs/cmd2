@@ -1,0 +1,284 @@
+20/02/2021 - 22:24 
+
+manoel@worktool ~/Público/gulp/gulp $ git status
+No ramo iprove_method_watch
+nada a submeter, diretório de trabalho vazio
+manoel@worktool ~/Público/gulp/gulp $ git log
+commit f04fe01d6aba45dc21abd5fd44c05e8ff5841441
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Sat Feb 20 20:36:21 2021 -0300
+
+    Organizing ... My documents!
+
+commit 2084ae9d56f5632c3659cf0680d398da085be61c
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Sat Feb 20 18:32:05 2021 -0300
+
+    Includes my documents
+
+commit f91c388beb265e5008202f11100309549162247a
+Author: roydukkey <roydukkey@users.noreply.github.com>
+Date:   Mon Feb 8 15:22:24 2021 -0500
+
+    Docs: Remove typo in custom registry docs (#2543)
+
+commit df252509b52acd712300b3b5d00bf7aedf0dbd40
+Author: Anderson Samir Corrêa Paz de Camargo <andergtk@users.noreply.github.com>
+Date:   Sun Jan 10 20:13:16 2021 -0300
+
+    Docs: Fix typo in task docs (#2524)
+manoel@worktool ~/Público/gulp/gulp $ git status
+No ramo iprove_method_watch
+nada a submeter, diretório de trabalho vazio
+manoel@worktool ~/Público/gulp/gulp $ git branch --list
+* iprove_method_watch
+  master
+manoel@worktool ~/Público/gulp/gulp $ git branch -a
+* iprove_method_watch
+  master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/contra-patch-1
+  remotes/origin/iprove_method_watch
+  remotes/origin/master
+  remotes/origin/wip-docs
+manoel@worktool ~/Público/gulp/gulp $ git branch -m improve_method_watch
+manoel@worktool ~/Público/gulp/gulp $ git branch --list
+* improve_method_watch
+  master
+manoel@worktool ~/Público/gulp/gulp $ git merge master
+Already up-to-date.
+manoel@worktool ~/Público/gulp/gulp $ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+manoel@worktool ~/Público/gulp/gulp $ git status
+No ramo master
+Your branch is up-to-date with 'origin/master'.
+Arquivos não monitorados:
+  (utilize "git add <arquivo>..." para incluir o que será submetido)
+
+	.gitignore~
+	docs/myDocs/
+
+nada adicionado ao envio mas arquivos não registrados estão presentes (use "git add" to registrar)
+manoel@worktool ~/Público/gulp/gulp $ git add .
+manoel@worktool ~/Público/gulp/gulp $ git status
+No ramo master
+Your branch is up-to-date with 'origin/master'.
+Mudanças a serem submetidas:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   .gitignore~
+	new file:   docs/myDocs/NOTES~
+	new file:   docs/myDocs/README.md~
+	new file:   docs/myDocs/cmd0~
+	new file:   docs/myDocs/cmd1~
+	new file:   docs/myDocs/notes~
+
+manoel@worktool ~/Público/gulp/gulp $ git reset HEAD *~
+manoel@worktool ~/Público/gulp/gulp $ git status
+No ramo master
+Your branch is up-to-date with 'origin/master'.
+Arquivos não monitorados:
+  (utilize "git add <arquivo>..." para incluir o que será submetido)
+
+	.gitignore~
+	docs/myDocs/
+
+nada adicionado ao envio mas arquivos não registrados estão presentes (use "git add" to registrar)
+manoel@worktool ~/Público/gulp/gulp $ git add .
+manoel@worktool ~/Público/gulp/gulp $ git status
+No ramo master
+Your branch is up-to-date with 'origin/master'.
+Mudanças a serem submetidas:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   .gitignore~
+	new file:   docs/myDocs/NOTES~
+	new file:   docs/myDocs/README.md~
+	new file:   docs/myDocs/cmd0~
+	new file:   docs/myDocs/cmd1~
+	new file:   docs/myDocs/notes~
+
+manoel@worktool ~/Público/gulp/gulp $ git reset HEAD .gitignore~
+manoel@worktool ~/Público/gulp/gulp $ git status
+No ramo master
+Your branch is up-to-date with 'origin/master'.
+Mudanças a serem submetidas:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   docs/myDocs/NOTES~
+	new file:   docs/myDocs/README.md~
+	new file:   docs/myDocs/cmd0~
+	new file:   docs/myDocs/cmd1~
+	new file:   docs/myDocs/notes~
+
+Arquivos não monitorados:
+  (utilize "git add <arquivo>..." para incluir o que será submetido)
+
+	.gitignore~
+
+manoel@worktool ~/Público/gulp/gulp $ git reset HEAD docs/myDocs/*~
+manoel@worktool ~/Público/gulp/gulp $ git status
+No ramo master
+Your branch is up-to-date with 'origin/master'.
+Arquivos não monitorados:
+  (utilize "git add <arquivo>..." para incluir o que será submetido)
+
+	.gitignore~
+	docs/myDocs/
+
+nada adicionado ao envio mas arquivos não registrados estão presentes (use "git add" to registrar)
+manoel@worktool ~/Público/gulp/gulp $ git add .
+manoel@worktool ~/Público/gulp/gulp $ git status
+No ramo master
+Your branch is up-to-date with 'origin/master'.
+Mudanças a serem submetidas:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   .gitignore
+	new file:   .gitignore~
+	new file:   docs/myDocs/README.md
+	new file:   docs/myDocs/cmd1
+
+manoel@worktool ~/Público/gulp/gulp $ git reset HEAD 
+Unstaged changes after reset:
+M	.gitignore
+manoel@worktool ~/Público/gulp/gulp $ git status
+No ramo master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (utilize "git add <arquivo>..." para atualizar o que será submetido)
+  (utilize "git checkout -- <arquivo>..." para descartar mudanças no diretório de trabalho)
+
+	modified:   .gitignore
+
+Arquivos não monitorados:
+  (utilize "git add <arquivo>..." para incluir o que será submetido)
+
+	docs/myDocs/
+
+nenhuma modificação adicionada à submissão (utilize "git add" e/ou "git commit -a")
+manoel@worktool ~/Público/gulp/gulp $ git add .
+manoel@worktool ~/Público/gulp/gulp $ git status
+No ramo master
+Your branch is up-to-date with 'origin/master'.
+Mudanças a serem submetidas:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   .gitignore
+	new file:   docs/myDocs/README.md
+	new file:   docs/myDocs/cmd1
+
+manoel@worktool ~/Público/gulp/gulp $ git commit -m "Reorganizing ... My documents!"[master 29fdd89] Reorganizing ... My documents!
+ 3 files changed, 309 insertions(+)
+ create mode 100644 docs/myDocs/README.md
+ create mode 100644 docs/myDocs/cmd1
+manoel@worktool ~/Público/gulp/gulp $ git push origin master
+Username for 'https://github.com': manoelmaciel
+Password for 'https://manoelmaciel@github.com': 
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 2.48 KiB | 0 bytes/s, done.
+Total 7 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/manoelmaciel/gulp.git
+   f91c388..29fdd89  master -> master
+manoel@worktool ~/Público/gulp/gulp $ git status
+No ramo master
+Your branch is up-to-date with 'origin/master'.
+nada a submeter, diretório de trabalho vazio
+manoel@worktool ~/Público/gulp/gulp $ git branch --list
+  improve_method_watch
+* master
+manoel@worktool ~/Público/gulp/gulp $ git checkout improve_method_watch
+Switched to branch 'improve_method_watch'
+manoel@worktool ~/Público/gulp/gulp $ git status
+No ramo improve_method_watch
+nada a submeter, diretório de trabalho vazio
+manoel@worktool ~/Público/gulp/gulp $ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+manoel@worktool ~/Público/gulp/gulp $ git branch -d improve_method_watch
+error: The branch 'improve_method_watch' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D improve_method_watch'.
+manoel@worktool ~/Público/gulp/gulp $ git checkout improve_method_watch
+Switched to branch 'improve_method_watch'
+manoel@worktool ~/Público/gulp/gulp $ branch merge master
+O programa 'branch' não está instalado no momento. Você pode instalá-lo digitando:
+sudo apt install rheolef
+manoel@worktool ~/Público/gulp/gulp $ git branch merge master
+manoel@worktool ~/Público/gulp/gulp $ git branch -d improve_method_watch
+error: Não é possível excluir ramificação 'improve_method_watch' que você está no momento.
+manoel@worktool ~/Público/gulp/gulp $ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+manoel@worktool ~/Público/gulp/gulp $ git branch -d improve_method_watch
+error: The branch 'improve_method_watch' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D improve_method_watch'.
+manoel@worktool ~/Público/gulp/gulp $ git status
+No ramo master
+Your branch is up-to-date with 'origin/master'.
+nada a submeter, diretório de trabalho vazio
+manoel@worktool ~/Público/gulp/gulp $ git branch -D improve_method_watch
+Deleted branch improve_method_watch (was f04fe01).
+manoel@worktool ~/Público/gulp/gulp $ git branch --list
+* master
+  merge
+manoel@worktool ~/Público/gulp/gulp $ git checkout merge
+Switched to branch 'merge'
+manoel@worktool ~/Público/gulp/gulp $ git status
+No ramo merge
+nada a submeter, diretório de trabalho vazio
+manoel@worktool ~/Público/gulp/gulp $ git log
+commit 29fdd8994c5282dd2e50e6dcd8572133c3108afd
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Sat Feb 20 21:16:27 2021 -0300
+
+    Reorganizing ... My documents!
+
+commit f91c388beb265e5008202f11100309549162247a
+Author: roydukkey <roydukkey@users.noreply.github.com>
+Date:   Mon Feb 8 15:22:24 2021 -0500
+
+    Docs: Remove typo in custom registry docs (#2543)
+
+commit df252509b52acd712300b3b5d00bf7aedf0dbd40
+Author: Anderson Samir Corrêa Paz de Camargo <andergtk@users.noreply.github.com>
+Date:   Sun Jan 10 20:13:16 2021 -0300
+
+    Docs: Fix typo in task docs (#2524)
+
+commit b6d6d7c8c37f4be846cf796d3929fe25c5329808
+Author: azu <azu@users.noreply.github.com>
+Date:   Mon Jan 11 07:49:51 2021 +0900
+
+    Docs: fix recipe link (#2526)
+manoel@worktool ~/Público/gulp/gulp $ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+manoel@worktool ~/Público/gulp/gulp $ git branch -D merge
+Deleted branch merge (was 29fdd89).
+manoel@worktool ~/Público/gulp/gulp $ git branch --list
+* master
+manoel@worktool ~/Público/gulp/gulp $ git pull
+Already up-to-date.
+manoel@worktool ~/Público/gulp/gulp $ git branch --list
+* master
+manoel@worktool ~/Público/gulp/gulp $ git push origin --delete iprove_method_watch
+Username for 'https://github.com': manoelmaciel
+Password for 'https://manoelmaciel@github.com': 
+To https://github.com/manoelmaciel/gulp.git
+ - [deleted]         iprove_method_watch
+manoel@worktool ~/Público/gulp/gulp $ git pull
+Already up-to-date.
+manoel@worktool ~/Público/gulp/gulp $ git status
+No ramo master
+Your branch is up-to-date with 'origin/master'.
+nada a submeter, diretório de trabalho vazio
+manoel@worktool ~/Público/gulp/gulp $ git status
+No ramo master
+Your branch is up-to-date with 'origin/master'.
+nada a submeter, diretório de trabalho vazio
+manoel@worktool ~/Público/gulp/gulp $ 
+
